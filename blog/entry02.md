@@ -19,6 +19,12 @@ A very accurate mass measurement tool, often to 0.0001 grams. Its accuracy makes
 3. [NMR Tubes](https://www.excedr.com/blog/what-type-of-equipment-is-used-in-chemistry-research)
 NMR tubes use a technique for determining the structure of organic compounds and other materials. They're good in [identifying molecular structures, dynamics, and interactions,](https://www.britannica.com/science/nuclear-magnetic-resonance) which with achieving consistent and [reproducible](https://www.google.com/search?q=reproducible+definition&rlz=1CAOFBT_enUS1093&oq=reproducible+defi&gs_lcrp=EgZjaHJvbWUqBwgBEAAYgAQyBggAEEUYOTIHCAEQABiABDIHCAIQABiABDIICAMQABgWGB4yCAgEEAAYFhgeMggIBRAAGBYYHjIICAYQABgWGB4yCAgHEAAYFhgeMgoICBAAGA8YFhgeMgoICRAAGA8YFhge0gEINzEyMmowajeoAgCwAgA&sourceid=chrome&ie=UTF-8&safe=active&ssui=on) results across different experiments. It's also very convenient, since it's easy to handle and transfer, making the risk of contamination very low.
 
+### Skills I learned during this  
+* How to find interesting information, and relate technological inventions to certain topics.
+I found things that wasn't technological, or that couldn't relate to chemistry, and that's fine, those are obvious to spot. But what wasn't obvious to pick, was something really *interesting*. When I want to expand someone's knowledge on a topic like chemistry for example, I'm not going to teach them about a telescope, or a microscope, because those are very known. So when I search, I think of what is really *intersting*, what excites me when I read it, what makes me want to learn more about, and that's what I end up mentioned and noting down.
+* How to use reliable sources
+I learned this because when I was looking at random websites, I'd see these magical, too good to be true inventions. Let me give you an example, on a website I found a hardware invention that was used to 'see atoms', and this really surprised me, be cause how did I not know about this? How did my chemistry teacher not know about this, right? Well, only one search of that hardware name later would the answer be revealed, because it's not real. If you checck my list, you'd see that I slowly started to use britannica more, which is a very info-full, and reliable website. But don't worry, the other research I mentioned was still reliable, just not as much as britannica.
+
 
 
 

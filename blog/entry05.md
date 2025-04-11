@@ -31,8 +31,8 @@ Some of my key learnings include:
 - Working with props for component communication
 
 Next steps:
-1. Deep dive into React Router for multi-page applications
-2. Make mini-projects that don't take much time but test skills
+1. Make mini-projects that don't take much time but test skills
+2. Learn React Router for multi-page applications (if time allows)
 3. Lastly, but obviously, work on my Freedom Project's react-sided things.
 
 [Previous](entry04.md) | [Next](entry06.md)

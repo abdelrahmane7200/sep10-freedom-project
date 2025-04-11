@@ -4,11 +4,20 @@
 Throughout this phase of the Engineering Design Process, I've focused on learning ReactJS to build interactive web components. My exploration has been centered on understanding React's fundamental concepts and implementing them in practical applications.
 
 I've developed two crucial skills during this period. The first skill is state management using React's useState hook. Through my [tinkering with counters and toggles](https://react.dev/reference/react/useState), I learned how to maintain and update component state effectively. This is a code example of how I used it:
-
 ```jsx
+// Example of setting the variable
+// Initialize state variable 'count' with initial value of 0
+// setCount is the function we use to update the count
 const [count, setCount] = useState(0);
+
+// Example of using setCount to update state
+const handleIncrement = () => {
+    setCount(count + 1); // Increases count by 1
+};
+
+// useEffect hook runs after every render
 useEffect(() => {
-    document.title = `Count is: ${count}`;
+    document.title = `Count is: ${count}`; // Sets the document title whenever count changes into count
 });
 ```
 
@@ -16,13 +25,15 @@ The second skill I've developed is error handling in React applications. Through
 
 ```jsx
 try {
-    setDisplay(eval(display).toString());
+    // Attempt to evaluate the mathematical expression (hence 'try')
+    // Convert the result to string and update display
+    setDisplay(eval(display).toString()); // This is what it's trying to do
 } catch (error) {
+    // If evaluation fails (invalid expression),
+    // show 'Error' message to user
     setDisplay('Error');
 }
 ```
-
-In the Engineering Design Process, my next step is to implement these concepts in real-world applications. I'll be practicing with actual use cases to make sure my understanding of React fundamentals is firm. This includes building small projects where I can apply state management, error handling, and component interactions in practical scenarios. And, obviously, it includes working on my actual Freedom Project.
 
 Some of my key learnings include:
 - Understanding React's component lifecycle

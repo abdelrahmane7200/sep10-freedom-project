@@ -16,7 +16,10 @@
 * Glow Shadow: rgba(106, 13, 173, 0.5)
 
 ## Fonts
-* [Text](URL)
+* [Montserrat](https://fonts.google.com/specimen/Montserrat) - Main headings and titles
+* [Roboto](https://fonts.google.com/specimen/Roboto) - Body text and content
+* [Raleway](https://fonts.google.com/specimen/Raleway) - Navigation and buttons
+* [Source Code Pro](https://fonts.google.com/specimen/Source+Code+Pro) - Code snippets (if I use)
 
 ## Timeline
 
@@ -28,8 +31,7 @@
 
 #### Beyond MVP
 
-* Task
-6
+* 3D Model
 
 
 

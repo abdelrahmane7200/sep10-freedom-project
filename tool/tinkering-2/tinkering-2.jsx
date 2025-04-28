@@ -241,6 +241,7 @@ function FutureTech() {
                     </div>
                 </div>
             </div>
+            <MoleculeViewer />
         </div>
     );
 }
@@ -317,16 +318,18 @@ function App() {
             <div className="particle-layer-3"></div>
             <Navbar />
             <div className="container">
-                <h1 className="text-center mb-4">Chemistry</h1>
-                <div className="overview mb-4">
-                    <p>Chemistry is a very important topic to all humans; it's used for medicine, the understanding of the universe, living beings, and more. But huge advancements in chemistry wouldn't have happened without technology, which is why we'll explore the importance of it through present examples and future possibilities.</p>
+                <div className="introduction">
+                    <h1>Chemistry Technology</h1>
+                    <p>
+                        Chemistry stands at the heart of scientific innovation, shaping our understanding
+                        of medicine, materials, and the universe itself. Through technological advancements,
+                        we've unlocked unprecedented capabilities in chemical analysis and synthesis.
+                    </p>
                 </div>
-
-                <div className="accordion mb-4">
+                <div className="accordion">
                     <SoftwareSection software={software} />
                     <HardwareSection hardware={hardware} />
                 </div>
-
                 <FutureTech />
             </div>
             <Footer />
@@ -334,4 +337,25 @@ function App() {
     );
 }
 
-ReactDOM.render(<App />, document.getElementById('root'));
+class ErrorBoundary extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { hasError: false };
+  }
+  componentDidCatch(error, errorInfo) {
+    console.error("ErrorBoundary caught an error", error, errorInfo);
+    this.setState({ hasError: true });
+  }
+  render() {
+    if (this.state.hasError) {
+      return <h2>Something went wrong.</h2>;
+    }
+    return this.props.children;
+  }
+}
+
+ReactDOM.createRoot(document.getElementById('root')).render(
+  <ErrorBoundary>
+    <App />
+  </ErrorBoundary>
+);

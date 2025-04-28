@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Raleway:wght@400;600&family=Roboto:wght@300;400;500&family=Source+Code+Pro&display=swap');
+
 :root {
     --primary: #6A0DAD;
     --secondary: #8A2BE2;
@@ -25,86 +27,61 @@ body {
     color: var(--text-light);
     position: relative;
     min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
 }
 
-body::before {
-    content: '';
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image:
-        repeating-linear-gradient(45deg, var(--bg-pattern) 25%, transparent 25%, transparent 75%, var(--bg-pattern) 75%, var(--bg-pattern)),
-        repeating-linear-gradient(45deg, var(--bg-pattern) 25%, transparent 25%, transparent 75%, var(--bg-pattern) 75%, var(--bg-pattern));
-    background-position: 0 0, 10px 10px;
-    background-size: 20px 20px;
-    animation: patternMove 15s linear infinite;
-    pointer-events: none;
-    z-index: 0;
+h1, h2, h3, h4, h5, h6,
+.card-title,
+.future-tech .card-header h3,
+.table th,
+.accordion-button {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.5px;
 }
 
-body::after {
-    content: '';
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: radial-gradient(circle at 50% 50%, var(--particle-color) var(--particle-size), transparent calc(var(--particle-size) + 1px));
-    background-size: 80px 80px;
-    animation: particleFloat 20s linear infinite;
-    pointer-events: none;
-    z-index: 0;
-    opacity: 0.6;
+.navbar-brand,
+.navbar-nav .nav-link,
+.btn-primary,
+.badge {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.5px;
 }
 
-.particle-layer-2 {
-    content: '';
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: radial-gradient(circle at 50% 50%, var(--particle-color) calc(var(--particle-size) - 1px), transparent var(--particle-size));
-    background-size: 60px 60px;
-    animation: particleFloat 15s linear infinite reverse;
-    pointer-events: none;
-    z-index: 0;
-    opacity: 0.4;
+.card-text,
+.accordion-body,
+.table td,
+p,
+.navbar-text,
+.alert,
+.future-tech .accordion-body li,
+.footer-content {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
 }
 
-.particle-layer-3 {
-    content: '';
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: radial-gradient(circle at 50% 50%, var(--particle-color) calc(var(--particle-size) - 2px), transparent calc(var(--particle-size) - 1px));
-    background-size: 100px 100px;
-    animation: particleFloat 25s linear infinite;
-    pointer-events: none;
-    z-index: 0;
-    opacity: 0.3;
+pre,
+code,
+.code-snippet {
+    font-family: 'Source Code Pro', monospace;
+    font-size: 0.9em;
 }
 
-@keyframes particleFloat {
-    0% {
-        transform: translateY(0) translateX(0) rotate(0deg);
-    }
-    25% {
-        transform: translateY(-20px) translateX(10px) rotate(90deg);
-    }
-    50% {
-        transform: translateY(0) translateX(20px) rotate(180deg);
-    }
-    75% {
-        transform: translateY(20px) translateX(10px) rotate(270deg);
-    }
-    100% {
-        transform: translateY(0) translateX(0) rotate(360deg);
-    }
+strong,
+.lead,
+.card-header,
+.table th {
+    font-weight: 600;
+}
+
+.text-light,
+.navbar-text {
+    font-weight: 300;
 }
 
 .navbar {
@@ -131,6 +108,7 @@ body::after {
 }
 
 .navbar-brand {
+    font-family: 'Montserrat', sans-serif;
     font-size: clamp(1.2rem, 3vw, 1.4rem);
     font-weight: bold;
     letter-spacing: 1px;
@@ -158,6 +136,7 @@ body::after {
     padding: 0.5rem 1rem;
     border-radius: 20px;
     transition: all 0.3s ease;
+    font-family: 'Raleway', sans-serif;
 }
 
 .navbar-nav .nav-link:hover {
@@ -171,7 +150,7 @@ body::after {
 }
 
 .container {
-    margin-top: 5rem; 
+    margin-top: 5rem;
     position: relative;
     z-index: 1;
 }
@@ -198,6 +177,7 @@ body::after {
 .accordion-body {
     background-color: var(--bg-light);
     color: var(--text-light);
+    font-family: 'Roboto', sans-serif;
 }
 
 .card {
@@ -208,15 +188,17 @@ body::after {
     color: var(--text-light);
     transition: transform 0.2s, box-shadow 0.2s;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
 }
 
-.card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 16px var(--glow-shadow);
-}
-
-.card-body {
-    padding: 1.5rem;
+.card-header {
+    background: linear-gradient(145deg, var(--primary), var(--secondary));
+    color: var(--text-light);
+    font-weight: bold;
+    border-bottom: 2px solid var(--accent);
+    border-radius: 13px 13px 0 0 !important;
+    margin: -1px -1px 0 -1px;
+    padding: 1rem 1.25rem;
 }
 
 .card-title {
@@ -242,13 +224,6 @@ body::after {
     color: var(--tertiary);
 }
 
-.card-header {
-    background: linear-gradient(145deg, var(--primary), var(--secondary));
-    color: var(--text-light);
-    font-weight: bold;
-    border-bottom: 2px solid var(--accent);
-}
-
 .btn-primary {
     background: linear-gradient(45deg, var(--accent), var(--secondary));
     border: none;
@@ -263,6 +238,7 @@ body::after {
     overflow: hidden;
     z-index: 1;
     transition: all 0.3s ease;
+    font-family: 'Raleway', sans-serif;
 }
 
 .btn-primary::before {
@@ -446,6 +422,7 @@ body::after {
 }
 
 .table th {
+    font-family: 'Montserrat', sans-serif;
     background: linear-gradient(145deg, var(--secondary), var(--primary));
     color: var(--accent);
     border: none;
@@ -498,12 +475,8 @@ body::after {
 }
 
 .table-responsive {
-    background: linear-gradient(145deg, var(--primary), var(--secondary));
+    margin: 2rem 0;
     padding: clamp(1rem, 3vw, 2rem);
-    border-radius: 20px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
 }
 
 @media (max-width: 768px) {
@@ -536,5 +509,109 @@ body::after {
     }
     to {
         background-position: 20px 20px, 30px 30px;
+    }
+}
+
+.molecule-viewer {
+    position: relative;
+    width: 100%;
+    height: 60vh;
+    background: linear-gradient(145deg, var(--primary), var(--secondary));
+    border-radius: 15px;
+    overflow: hidden;
+    margin: 2rem 0;
+    box-shadow: 0 8px 16px var(--glow-shadow);
+}
+
+.model-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.model-container canvas {
+    border-radius: 15px;
+}
+
+.loading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    color: var(--text-light);
+    font-size: 1.2rem;
+}
+
+.loading .fa-atom {
+    font-size: 2rem;
+    color: var(--accent);
+}
+
+pre code,
+.code {
+    font-family: 'Source Code Pro', monospace;
+}
+
+.introduction {
+    background: linear-gradient(145deg, rgba(106, 13, 173, 0.1), rgba(138, 43, 226, 0.1));
+    border-radius: 20px;
+    padding: 2.5rem 2rem;
+    margin: 0 0 3rem;
+    border: 1px solid var(--accent);
+    box-shadow: 0 4px 15px var(--glow-shadow);
+    position: relative;
+    overflow: hidden;
+}
+
+.introduction::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg,
+        transparent 0%,
+        rgba(255, 215, 0, 0.1) 50%,
+        transparent 100%);
+    transform: translateX(-100%);
+    animation: shimmer 3s infinite;
+}
+
+.introduction h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: 700;
+    background: linear-gradient(45deg, var(--accent), var(--tertiary));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.introduction p {
+    font-family: 'Roboto', sans-serif;
+    font-size: clamp(1rem, 2.5vw, 1.2rem);
+    line-height: 1.8;
+    color: var(--text-content);
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+@keyframes shimmer {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
     }
 }

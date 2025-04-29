@@ -96,6 +96,21 @@ function SoftwareSection({ software }) {
                         {software.map((item, index) => (
                             <div key={index} className="col">
                                 <div className="card h-100">
+                                    {item.image && (
+                                        <div style={{ height: '200px', backgroundColor: '#f8f9fa', padding: '10px' }}>
+                                            <img
+                                                src={item.image}
+                                                className="card-img-top"
+                                                alt={item.name}
+                                                style={{
+                                                    height: '100%',
+                                                    width: '100%',
+                                                    objectFit: 'contain',
+                                                    objectPosition: 'center'
+                                                }}
+                                            />
+                                        </div>
+                                    )}
                                     <div className="card-header">
                                         <i className="fas fa-code me-2"></i>
                                         {item.name}
@@ -133,6 +148,21 @@ function HardwareSection({ hardware }) {
                         {hardware.map((item, index) => (
                             <div key={index} className="col">
                                 <div className="card h-100">
+                                    {item.image && (
+                                        <div style={{ height: '200px', backgroundColor: '#f8f9fa', padding: '10px' }}>
+                                            <img
+                                                src={item.image}
+                                                className="card-img-top"
+                                                alt={item.name}
+                                                style={{
+                                                    height: '100%',
+                                                    width: '100%',
+                                                    objectFit: 'contain',
+                                                    objectPosition: 'center'
+                                                }}
+                                            />
+                                        </div>
+                                    )}
                                     <div className="card-header">
                                         <i className="fas fa-tools me-2"></i>
                                         {item.name}
@@ -261,16 +291,27 @@ function Footer() {
 }
 
 function App() {
-    const software = [
+    // Add sorting helper function
+    const sortByImage = (items) => {
+        return [...items].sort((a, b) => {
+            if (a.image && !b.image) return -1;
+            if (!a.image && b.image) return 1;
+            return 0;
+        });
+    };
+
+    const software = sortByImage([
         {
             name: "ChemDraw",
             description: "Professional tool for drawing chemical structures, converting to IUPAC names, 3D rendering, reaction mechanism annotations, and chemical database integration.",
-            url: "https://revvitysignals.com/products/research/chemdraw"
+            url: "https://revvitysignals.com/products/research/chemdraw",
+            image: "prep/sep10_freedom_chemdraw.jpg"
         },
         {
             name: "Avogadro",
             description: "Open-source 3D molecule building and visualization tool with real-time editing, quantum mechanical calculations, and molecular dynamics simulations.",
-            url: "https://avogadro.cc/"
+            url: "https://avogadro.cc/",
+            image: "prep/sep10_freedom_avogadro.png"
         },
         {
             name: "ChemDoodle",
@@ -285,11 +326,12 @@ function App() {
         {
             name: "PyMOL",
             description: "3D molecular visualization tool for protein structure analysis, high-quality molecular graphics, and animations used in academic and pharmaceutical research.",
-            url: "#"
+            url: "#",
+            image: "prep/sep10_freedom_pymol.png"
         }
-    ];
+    ]);
 
-    const hardware = [
+    const hardware = sortByImage([
         {
             name: "Volumetric Flasks",
             description: "Very precise volume measurement tools essential for creating diluted solutions from concentrated stock.",
@@ -298,19 +340,22 @@ function App() {
         {
             name: "Analytical Balance",
             description: "Provides highly accurate mass measurements to 0.0001 grams, essential for precise weighing and quantitative analyses. Features advanced capabilities like draft shields.",
-            url: "https://www.fishersci.com/us/en/browse/90134103/analytical-balances"
+            url: "https://www.fishersci.com/us/en/browse/90134103/analytical-balances",
+            image: "prep/sep10_freedom_analytic_balance.webp"
         },
         {
             name: "Distillation Apparatus",
             description: "Complex system for heating, monitoring, cooling, and collecting purified liquids. Used in food processing, essential oil extraction, and production of distilled products.",
-            url: "https://www.britannica.com/technology/distillation"
+            url: "https://www.britannica.com/technology/distillation",
+            image: "prep/sep10_freedom_distillation_appartus.webp"
         },
         {
             name: "NMR Tubes",
             description: "Specialized equipment for determining molecular structures and dynamics. Essential for organic compound analysis and achieving reproducible experimental results.",
-            url: "https://www.britannica.com/science/nuclear-magnetic-resonance"
+            url: "https://www.britannica.com/science/nuclear-magnetic-resonance",
+            image: "prep/sep10_freedom_nmr.JPG"
         }
-    ];
+    ]);
 
     return (
         <div>

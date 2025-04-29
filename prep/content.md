@@ -68,19 +68,21 @@ Analytic balance
 
 Hardware: Laboratory Equipment for Separation and Purification
 
-3. Distillation Apparatus
+#### 3. Distillation Apparatus
 - Heats liquid mixtures
 - Monitors the temperature
 - Cools & Condenses vapor back into liquid
 - Collects the distilled (cleansed/purified) liquid
 - Used in purification of liquids
-- Isolates specific components based on their boiling points, such as in the production of essential oils or alcohol.
-- Used in food processing by extracting essential oils, and separating byproducts.
+- Isolates specific components based on their boiling points, such as in the production of essential oils or alcohol
+- Used in food processing by extracting essential oils, and separating byproducts
 - Can be used to make distilled vinegar. Distilled vinegar is a fermented product which can be used to preserve food
-- Info at britannica
 
-Distillation Apparatus
-	4. NMR Tubes
+*Source: [Britannica](https://www.britannica.com)*
+
+![Distillation Apparatus](URL_TO_IMAGE)
+
+#### 4. NMR Tubes
 - Uses a technique for determining the structure of organic compounds and other materials
 - Identification of molecular structures, dynamics, and interactions
 - Helps in achieving consistent and reproducible results across different experiments.
@@ -151,6 +153,11 @@ Some materials might not produce distinct spectral features or could interfere w
 Data Storage:
 The device would need a substantial database of spectral data for a wide range of compounds, which could become bulky or need frequent updates.
 
+
+## Images
+![Avogadro](prep/sep10_freedom_avogadro.png)
+![Analytic balance](prep/sep10_freedom_analytic_balance.webp)
+![Distillation apparatus](prep/sep10_freedom_distillation_appartus.webp)
 
 
 

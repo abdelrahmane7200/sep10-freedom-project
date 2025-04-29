@@ -131,7 +131,7 @@ function createAnalyzer() {
         batteryIndicator.add(led);
     }
 
-    // Add all components to main group
+    // all components to main group
     bodyGeometry.add(handle);
     bodyGeometry.add(grip);
     bodyGeometry.add(mainBody);
@@ -141,7 +141,7 @@ function createAnalyzer() {
     bodyGeometry.add(trigger);
     bodyGeometry.add(buttonGroup);
     bodyGeometry.add(batteryIndicator);
-    bodyGeometry.add(tipGroup); // Add tipGroup to bodyGeometry
+    bodyGeometry.add(tipGroup); // tipGroup to bodyGeometry
 
     analyzerGroup.add(bodyGeometry);
 

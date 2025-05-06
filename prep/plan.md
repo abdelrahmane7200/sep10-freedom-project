@@ -36,18 +36,12 @@
 
 
 
-
-
-
-<!-- DO NOT USE THIS YET
-
 | Name | Glows | Grows |
 | -------- | ------- | ------- |
-|   |   |
+| Tina  |  I like how the box that contains your title has that cool feature with the color |Have you maybe considered adding some images that are not just in your dropdown menu. 
 |   |   |
 |   |   |
 |   |   |
 |   |   |
 |   |   |
 
--->

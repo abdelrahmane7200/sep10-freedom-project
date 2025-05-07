@@ -32,18 +32,12 @@
 
 
 
-
-
-
-<!-- DO NOT USE THIS YET
-
 | Name | Glows | Grows |
 | -------- | ------- | ------- |
-|   |   |
-|   |   |
-|   |   |
-|   |   |
+| Tina  |  I like how the box that contains your title has that cool feature with the color |Have you maybe considered adding some images that are not just in your dropdown menu. 
+|  Farzona |  I like how you use a lot of different components from bootstrap becasue that makes you project so much bettter. For example, the slidebar you created for the hardware part of your project makes it look so much neater. | lowkey I dont have anything to say like I cant find anything to tell you to consider fixing. 
+|  Jintian | I like how you added many details and also cool bootstrap or javascript to make your website cooler.  | I think you could fix the minimized dropbar, when I select future tech it lights up hardware, and when I select hardware it lights up software.
+| Jolee  | I really like the idea how you have cards inside of an accordion, I've never thought of that before. The animations when you hover are very smooth and pleasing to look at. I also found the way you embedded your 3D model was cool too.  | Have you considered adding images for all tools?
 |   |   |
 |   |   |
 
--->

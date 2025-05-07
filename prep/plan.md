@@ -25,13 +25,9 @@
 
 #### MVP
 
-* Task/Timeline
-
----
 
 #### Beyond MVP
-
-* 3D Model
+- [x] 3D Model
 
 
 

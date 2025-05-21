@@ -1,5 +1,5 @@
 # Entry 6
-##### 5/8/25
+##### 5/8/25 
 During this phase of the Engineering Design Process, I focused on creating the Minimum Viable Product (MVP) for my Chemistry Technology website, and had time to go above and beyond. This involved implementing the planned designs and features using React components while implementing all my content and following the requirements.
 
 ### MVP Development Process

@@ -1,16 +1,24 @@
 # Presentation Plan
 
 ## Hook
-* 
+* [Did you know that these slides are a direct cause of Chemistry-related …               advancements?
+](https://docs.google.com/presentation/d/1C5X2TpJmQfooIenHZ4EuKwJbud_JDXDU5QNXU78F8yI/edit?usp=sharing)
 
 ## Product
-* 
+* The website
 
 ## Process
-* 
+* How I googled the part A and part B with incusion of taking inspiration from Chem Class
+* Thinking of future (mom helped)
+* Learning tool w/ snippets
+* Combining knowledge to make site (dictionary/json for implementing content)
+* The extra model (ThreeJs)
 
 ## Conclusion
-* 
+* Website link
+* Takeaways
+  * Ask others
+  * Make use of your situation
 
 <!-- EXAMPLE
 
